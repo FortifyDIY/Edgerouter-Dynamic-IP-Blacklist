@@ -92,4 +92,4 @@ rm /config/blacklist/addblock.txt
  rm /config/blacklist/netblock.txt
 
 # Remove faulty network(s)
-ipset del ET-N 0.0.0.0/1 -exist 
+sudo ipset del ET-N 0.0.0.0/1 -exist 

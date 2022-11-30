@@ -53,9 +53,7 @@ sort PreUniqueOutput.txt | uniq -u > PreBlacklist.txt
 #Remove any whitelisted ip's from LocalWhitelist.txt
 sort PreBlacklist.txt > PreBL.sort
 sort LocalWhitelist.txt > LocalWL.sort
-comm -23
-PreBL.sort LocalWL.sort
-> BLACKLIST.txt
+comm -23 PreBL.sort LocalWL.sort > BLACKLIST.txt
 
 #Remove any preliminary files
 rm Pre*
